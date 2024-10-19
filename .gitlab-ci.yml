@@ -3,5 +3,7 @@ stages:
 
 test_job:
   stage: test
+  tags:
+    - vats-runner-1
   script:
     - echo "Hello, GitLab Runner!"
