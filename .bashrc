@@ -1,7 +1,6 @@
-export CLICOLOR=1
-export LSCOLORS=GxFxCxDxBxegedabagaced
+# Bash configuration
 
-alias ll='ls -l'
+alias ls='ls --color=auto'
 alias sb='source ~/.bashrc'
 alias vimb='vim ~/.bashrc'
 
@@ -16,11 +15,12 @@ alias crun='cargo run'
 alias cbld='cargo build'
 alias pyrun='python3 .'
 alias pyenv='source myenv/bin/activate'
-alias deac='deactivate'
 alias vimb='vim ~/.bashrc'
 
-alias cac='conda activate ml4t'
-
+# GIT
+git config --global user.email "aminvatsal1999@gmail.com"
+git config --global user.name "aminvatsal1999"
+git config --global credential.helper store
 
 # Env variables -----------------
 export PYTHONPATH=../:.
