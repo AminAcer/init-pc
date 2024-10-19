@@ -3,6 +3,7 @@ export LSCOLORS=GxFxCxDxBxegedabagaced
 
 alias ll='ls -l'
 alias sb='source ~/.bashrc'
+alias vimb='vim ~/.bashrc'
 
 # For git ------------------------
 alias gs='git status'
