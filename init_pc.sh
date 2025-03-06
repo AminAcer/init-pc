@@ -1,8 +1,9 @@
 #!/bin/bash
 
-# Install software
-sudo yum install -y vim helix docker htop
-sudo yum groupinstall -y "Development Tools"
+# Install Software
+sudo yum install -y vim helix docker htop ncdu cmake ninja clang clangd go cargo rust-analyzer
+sudo yum group install -y development-tools c-development
+sudo yum clean all
 sudo usermod -aG docker $(whoami)
 
 # Bashrc
