@@ -1,10 +1,9 @@
 # Bash configuration
 
+# Alias ------------------------
 alias ls='ls --color=auto'
 alias sb='source ~/.bashrc'
 alias vimb='vim ~/.bashrc'
-
-# For git ------------------------
 alias gs='git status'
 alias ga='git add .'
 alias gp='git push'
@@ -16,16 +15,24 @@ alias cbld='cargo build'
 alias pyrun='python3 .'
 alias pyenv='source myenv/bin/activate'
 alias vimb='vim ~/.bashrc'
+alias repos='cd ~/repos'
 
-# GIT
+# GIT --------------------------
 git config --global user.email "aminvatsal1999@gmail.com"
 git config --global user.name "aminvatsal1999"
 git config --global credential.helper store
 
-# Env variables -----------------
+# Env variables ----------------
 export PYTHONPATH=../:.
 export PATH=$HOME/dev/flutter/bin:$HOME/dev/cmdline-tools/bin/:$PATH
 
-# Bash Prompt
+# ESP IDF ----------------------
+source /home/avatsal/repos/esp-idf/export.sh &> /dev/null
+export IDF_TARGET=esp32s3
+alias idff='idf.py -p /dev/ttyUSB0 flash monitor'
+alias idfb='idf.py build'
+alias idfc='rm -rf build; idf.py fullclean'
+
+# Bash Prompt ------------------
 source ~/.git-prompt.sh
 export PROMPT_COMMAND='PS1_CMD1=$(__git_ps1 " (%s)")'; PS1='\[\e[38;5;196m\]\u\[\e[38;5;202m\]@\[\e[38;5;208m\]\h\[\e[0m\] \[\e[38;5;220m\]\w\[\e[38;5;27m\]${PS1_CMD1}\[\e[0m\] \\$ '
