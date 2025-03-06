@@ -6,6 +6,7 @@ sudo yum groupinstall -y "Development Tools"
 
 # Bashrc
 cp BASHRC ~/.bashrc
+cp git-prompt.sh ~/.git-prompt.sh
 source ~/.bashrc
 
 # VIM
