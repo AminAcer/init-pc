@@ -3,6 +3,7 @@
 # Install software
 sudo yum install -y vim helix docker htop
 sudo yum groupinstall -y "Development Tools"
+sudo usermod -aG docker $(whoami)
 
 # Bashrc
 cp BASHRC ~/.bashrc
