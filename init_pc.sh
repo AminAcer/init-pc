@@ -5,13 +5,13 @@ sudo yum install -y vim helix docker htop
 sudo yum groupinstall -y "Development Tools"
 
 # Bashrc
-cp .bashrc ~/.bashrc
+cp BASHRC ~/.bashrc
 source ~/.bashrc
 
 # VIM
 mkdir -p ~/.vim/colors
 cp gruvbox.vim ~/.vim/colors
-cp .vimrc ~/.vimrc
+cp VIMRC ~/.vimrc
 
 # Helix
 mkdir -p ~/.config/helix
