@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Install Software
-sudo yum install -y vim helix docker htop ncdu cmake ninja clang clangd go cargo rust-analyzer
+sudo yum install -y vim helix docker htop ncdu cmake ninja clang clangd go cargo rust-analyzer ksshaskpass
 sudo yum group install -y development-tools c-development
 sudo yum clean all
 sudo usermod -aG docker $(whoami)

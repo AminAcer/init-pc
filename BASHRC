@@ -27,8 +27,8 @@ export PYTHONPATH=../:.
 export PATH=$HOME/dev/flutter/bin:$HOME/dev/cmdline-tools/bin/:$PATH
 
 # ESP IDF ----------------------
-source /home/avatsal/repos/esp-idf/export.sh &> /dev/null
 export IDF_TARGET=esp32s3
+alias sidf='source /home/avatsal/repos/esp-idf/export.sh &> /dev/null'
 alias idff='idf.py -p /dev/ttyUSB0 flash monitor'
 alias idfb='idf.py build'
 alias idfc='rm -rf build; idf.py fullclean'

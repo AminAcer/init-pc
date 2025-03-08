@@ -269,6 +269,8 @@ nnoremap te :tabclose<CR>
 nnoremap tm :tabmove<CR>
 nnoremap tp :tabprevious<CR>
 nnoremap tn :tabnext<CR>
+nnoremap dd "0dd
+
 
 " Map space to / search and CTRL-space to ? backwards search
 nnoremap <space> /
